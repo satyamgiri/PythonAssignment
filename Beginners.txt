@@ -1,0 +1,64 @@
+1. What command is used to get the IP addresses of all interfaces
+on a server?
+- ifconfig
+
+2. What is the purpose of "mv" command?
+
+- Move files from one place to another in a file system in linux
+
+3. Which command is used to create a new empty file?
+-touch command
+
+4. Which command is used to display the contents of a directory?
+-ls or dir (in linux)
+
+5. Which command is used to display all the file names along with
+their types of the current directory?
+-ls
+
+6. Which command is used to clear the terminal?
+-clear
+
+7. What are daemons?
+-A daemon is a type of program on Unix-like operating systems that runs unobtrusively in the background, rather than under the direct control of a user, waiting to be activated by the occurance of a specific event or condition.
+
+8. Which command is used to move to the parent directory?
+-cd
+
+9. What does echo command do?
+-It is used to display line of text/string that are sent as an argument
+
+
+10.How to display content of a file?
+-use cat file.txt
+
+
+11. How to identify which shell you are using?
+-ps -p $$ or echo "$SHELL"
+
+12. How do you check if a particular service is running?
+-service --status-all
+
+
+13.What is the command to run a program with elevated
+permissions?
+- CTRL+SHIFT+ENTER
+
+14.Which command is used to display the path of the current
+working directory?
+-pwd
+
+15. How to delete a directory forcefully?
+-rm -rf dirname
+
+16.Which command is used to switch from superuser to normal user?
+-command su.
+
+17. How to switch to superuser (root) with elevated permissions? 
+-sudo su -
+
+18.How to determine the type of a file?
+-file -v
+
+
+
