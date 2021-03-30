@@ -1,0 +1,58 @@
+INTERMEDIATE LEVEL
+1. What are the different modes when using VI editor?
+2. Which command is used to create multiple directories simultaneously?
+3. What is LILO?
+4. Howcd~,cd/andcd-aredifferentfromeachother?
+5. What is a grep command?
+6. IfweareinthedirectoryXandwearerunningrmdirXbeinginthat
+directory X. Will this command successfully remove the directory or not?
+7. What are the contents of /usr/local?
+8. Whichcommandisusedtodisplaythecurrentusername?
+9. Whatcommandisusedtochangeyourpassword?
+10. How to find the difference in two configuration files?
+11. How to find where a file is located in Linux?
+12. Which command shows the users that are logged in?
+13. How to forcefully stop a process which is running in the background?
+14. Which command is used to list the name of files starting from any
+particular alphabet or string?
+15. How to move multiple files of the same extension to a different directory?
+    
+ 16. What command would you use to check how much memory is being used ?
+17. Which command is used to display the list of content in reverse order?
+18. What command is used to show how long it's been since the server was
+rebooted?
+19. What command is used to change the ownership of a file?
+  ADVANCED LEVEL
+Version1.0
+  1. How to see the list of mounted devices on a Linux system?
+2. How to check disk usage in terms of kilobytes(K), megabytes(M) and
+gigabytes(G)?
+3. What is Swap Space?What is a typical size for a swap partition in Linux?
+4. HowwouldyouscheduleataskinLinux?
+5. How these commands would be working try and explain (files contain
+“hello” word) :
+● grep -v -i hello file1.txt
+● grep -i hello file2.txt
+● grep -A 2 hello file2.txt
+● grep -C 4 hello file1.txt
+● grep -B 3 hello file1.txt
+● ps -ef | more
+● awk '{print $2,$5;}' employee.txt
+6. Whatistheexportcommandusedfor?(GiveExample)
+7. Explain the redirection operator?
+8. Whichcommandisusedtoreviewbootmessages?
+
+9.
+10.
+11. 12. 13.
+Whichcommandisusedtochangethepermissionsofafile?Explainits usage?
+Which command would you use to create a file system on a new hard drive?
+How to compress files in Linux?
+Which file is used to automatically mount file systems on boot? Find out the purpose of each of the following commands:
+● shutdown ● diff
+● sort
+● ps
+● kill
+● mount ● nano
+What are symbolic links?How do you create one using command?
+Howwouldyoucopyafileoradirectoryfromyoursystemtoanother system on the same network?
