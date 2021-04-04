@@ -1,58 +1,151 @@
 INTERMEDIATE LEVEL
 1. What are the different modes when using VI editor?
+-Entry Mode ( Type text into a file)
+- Command mode (Type commands that perform unique vi functions)
+
+
 2. Which command is used to create multiple directories simultaneously?
+-mkdir
+
 3. What is LILO?
-4. Howcd~,cd/andcd-aredifferentfromeachother?
+LILO stands for Linux Loader that is used to load Linux into memory
+
+4. Howcd~,cd/andcd-are different from each other?
+-The cd\ command takes you back to the root directory of the current drive.
+-The cd / command takes you back to the root directory of the current drive.
+-When typing the cd .. command , this moves the directory back one directory
+- cd - will print the directory it changed to out to standard output, and cd ~- just changes directories without printing anything
+
+
 5. What is a grep command?
-6. IfweareinthedirectoryXandwearerunningrmdirXbeinginthat
+-grep searches the named input FILEs (or standard input if no files are named, or if a single hyphen-minus (-) is given as file name) for lines containing a match to the given PATTERN. By default, grep prints the matching lines
+
+
+6. If we are in the directory X and we are running rmdir X being in that
 directory X. Will this command successfully remove the directory or not?
+-Not
+-We have to get out of that directory first and then only we can delete X
+
 7. What are the contents of /usr/local?
-8. Whichcommandisusedtodisplaythecurrentusername?
-9. Whatcommandisusedtochangeyourpassword?
+-/usr/local/  contains executables, data files, plugins, etc. associated with the Integrated Development Environment (IDE), which is shipped as part of the QNX Momentics Tool Suite on Linux and Windows
+
+
+8. Which command is used to display the current username?
+-whoami
+
+9. What command is used to change your password?
+-passwd command
+
 10. How to find the difference in two configuration files?
+-vimdiff file1 file2
+
+
 11. How to find where a file is located in Linux?
+-find command options starting/path expression
+eg;find . -name thisfile.txt
+
 12. Which command shows the users that are logged in?
+-w command
+
 13. How to forcefully stop a process which is running in the background?
+-Using pkill/kill command
+
 14. Which command is used to list the name of files starting from any
 particular alphabet or string?
+-find . -type f -name "abc*" 
+
 15. How to move multiple files of the same extension to a different directory?
+-mv -t DESTINATION file1 file2 file3
     
  16. What command would you use to check how much memory is being used ?
+-free -m
+-vmstat 
+
 17. Which command is used to display the list of content in reverse order?
+-ls -r
+
+
 18. What command is used to show how long it's been since the server was
 rebooted?
+-last reboot
+
 19. What command is used to change the ownership of a file?
-  ADVANCED LEVEL
+-command chown
+
+ADVANCED LEVEL
 Version1.0
-  1. How to see the list of mounted devices on a Linux system?
+
+1. How to see the list of mounted devices on a Linux system?
+-mount
+
 2. How to check disk usage in terms of kilobytes(K), megabytes(M) and
 gigabytes(G)?
+-df
+
 3. What is Swap Space?What is a typical size for a swap partition in Linux?
-4. HowwouldyouscheduleataskinLinux?
+-Swap space in Linux is used when the amount of physical memory (RAM) is full.
+-Swap should equal 2x physical RAM for up to 2 GB of physical RAM, and then an additional 1x physical RAM for any amount above 2 GB, but never less than 32 MB
+
+4. How would you schedule a task in Linux?
+-crontab -l
+
 5. How these commands would be working try and explain (files contain
 “hello” word) :
-● grep -v -i hello file1.txt
-● grep -i hello file2.txt
-● grep -A 2 hello file2.txt
-● grep -C 4 hello file1.txt
-● grep -B 3 hello file1.txt
-● ps -ef | more
-● awk '{print $2,$5;}' employee.txt
-6. Whatistheexportcommandusedfor?(GiveExample)
-7. Explain the redirection operator?
-8. Whichcommandisusedtoreviewbootmessages?
 
-9.
-10.
-11. 12. 13.
-Whichcommandisusedtochangethepermissionsofafile?Explainits usage?
-Which command would you use to create a file system on a new hard drive?
-How to compress files in Linux?
-Which file is used to automatically mount file systems on boot? Find out the purpose of each of the following commands:
-● shutdown ● diff
-● sort
-● ps
-● kill
-● mount ● nano
-What are symbolic links?How do you create one using command?
-Howwouldyoucopyafileoradirectoryfromyoursystemtoanother system on the same network?
+● grep -v -i hello file1.txt
+Print the line in file1.txt that contains hello 
+
+● grep -i hello file2.txt
+Print the line in file2.txt that contains hello 
+
+● grep -A 2 hello file2.txt
+Print the line in file2.txt that contains hello two times
+
+● grep -C 4 hello file1.txt
+Print the line in file1.txt that contains hello four times
+
+● grep -B 3 hello file1.txt
+Print the line in file1.txt that contains hello thrice
+
+● ps -ef | more
+-To view the process status output more pages at a time.
+
+● awk '{print $2,$5;}' employee.txt
+Print the second and fifth line in file employee.txt
+
+6. What is the export command used for?(Give Example)
+-It is used to ensure the environment variables and functions to be passed to child processes
+
+7. Explain the redirection operator?
+-A redirection operator is a special character that can be used with a command, like a Command Prompt command or DOS command, to either redirect the input to the command or the output from the command.
+
+8. Which command is used to review boot messages?
+-dmesg
+
+9. Which command is used to change the permissions of a file? Explain its usage?
+-chmod command
+-The chmod command enables you to change the permissions on a file. One must be superuser or the owner of a file or directory to change its permissions.
+
+10. Which command would you use to create a file system on a new hard drive?
+-generic mkfs command
+
+11. How to compress files in Linux?
+-We can use tar, zip, gzip, bzip2, and xz command to compress files in linux
+
+12. Which file is used to automatically mount file systems on boot? Find out the purpose of each of the following commands:
+-Mount command
+
+● shutdown - To shut down the system
+● diff- used to display the differences in the files by comparing the files 
+● sort- sorts the contents of a text file, line by line. 
+● ps-  enables us to check the status of active processes on a system, as well as display technical information about the processes
+● kill- used to send a signal to a process.
+● mount- mounts a storage device or filesystem, making it accessible and attaching it to an existing directory structure
+● nano -open a file in text editor
+
+13. What are symbolic links?How do you create one using command?
+-A symbolic link (or "symlink") is file system feature that can be used to create a link to a specific file or folder
+-ln -s target_path link_path
+
+14. How would you copy a file or a directory from your system to another system on the same network?
+-To access shared folder on other computers on your network, simply look for your computer’s name in the Network section on your other machine. When you choose it, you’ll have a new option to connect to this folder.
