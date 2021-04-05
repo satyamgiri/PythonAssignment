@@ -1,0 +1,40 @@
+Satyams-MBP% cd Exercise-5
+Satyams-MBP% ls
+Satyams-MBP% touch hello.txt
+Satyams-MBP% nano hello.text
+Satyams-MBP% touch another.txt
+Satyams-MBP% nano another.txt 
+Satyams-MBP% git stash
+No local changes to save
+Satyams-MBP% git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	./
+	../GIT ASSIGNMENT.pdf
+	../LinuxAssignment/
+	../index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+Satyams-MBP% git stash -u
+Saved working directory and index state WIP on main: 91b1277 Exercise4
+Satyams-MBP% git status
+fatal: Unable to read current working directory: No such file or directory
+Satyams-MBP% git stash list
+fatal: Unable to read current working directory: No such file or directory
+Satyams-MBP% git stash show
+fatal: Unable to read current working directory: No such file or directory
+Satyams-MBP% git stash show -p
+fatal: Unable to read current working directory: No such file or directory
+Satyams-MBP% ls
+Satyams-MBP% ls
+Satyams-MBP% cd ..
+Satyams-MBP% ls
+Beginners.txt		Exercise-3		README.md
+Exercise-1		Exercise-4
+Exercise-2		Intermediate.txt
+Satyams-MBP% cd Exercise-5
+cd: no such file or directory: Exercise-5
+Satyams-MBP% 
