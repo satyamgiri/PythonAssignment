@@ -1,0 +1,126 @@
+
+
+ TASK ONE NUMBERS AND VARIABLES
+
+1. Create three variables in a single line and assign values to them in such a manner that each one of them belongs to a different data type.
+E.g. :
+a = 1,
+b = 2.01,
+c = 'string'
+
+a, b ,c = 1,2.01, 'string'
+
+2. Create a variable of type complex and swap it with another variable of type integer.
+
+a= 1 + 3m
+b=3
+b=a
+
+print("The new value of b is : ", b)
+
+3. Swap two numbers using a third variable and do the same task without using any third variable.
+
+a=10
+b=20
+c=30
+c=b
+b=a
+
+
+a =10
+b =15
+
+a, b = b,a
+
+
+4. Write a program that takes input from the user and prints it using both Python 2.x and Python 3.x Version.
+
+python 2.x 
+
+n =raw_input("Enter the number: ")
+
+print"n"
+
+Python 3.x
+
+n =input("Enter the number: ")
+
+print(n)
+
+
+
+5. Write a program to complete the task given below:
+
+Ask users to enter any 2 numbers in between 1-10 , add the two numbers and keep the sum in another variable called z. Add 30 to z and store the output in variable result and print result as the final output.
+
+z=0
+number1=input("Enter the first number: ")
+number2=input("Enter the second number: ")
+z= number1 +number2
+variable =z+30
+print("The final output is : ", variable)
+
+
+
+
+6. Write a program to check the data type of the entered values.
+HINT: Printed output should say - The data type of the input value is : int/float/string/etc
+ 
+one1 = input("Enter the name: ")
+print(type(one1))
+print(one1)
+
+one2 = input("Enter the number: ")
+print(type(one))
+print(one2)
+
+
+
+
+ 7. Create Variables using formats such as Upper CamelCase, Lower CamelCase, SnakeCase and UPPERCASE.
+
+(Refer: https://capitalizemytitle.com/camel-case/)
+
+//upper and lower
+
+var1=input("Enter the string you want to convert : ")
+var1.upper()
+var1.lower()
+
+
+
+//upper snake to carmel
+
+import re
+def snake_2_camel(word): 
+        return ''.join(x.upper() or '_' for x in word.split('_'))
+print(snake_2_camel('hello world'))
+
+
+//lower snake to carmel
+import re
+def snake_2_camel(word): 
+        return ''.join(x.lower() or '_' for x in word.split('_'))
+print(snake_2_camel('hello world'))
+
+//snake to carmel
+
+import re
+def snake_2_camel(word):  
+        return ''.join(x.capitalize() or '_' for x in word.split('_'))
+print(snake_2_camel('hello world'))
+
+
+//carmel to snake
+import re
+
+val = 'HelloWorld'
+val = re.sub(r'(?<!^)(?=[A-Z])', '_', name).lower()
+print(val)
+
+
+8. If one data type value is assigned to ‘a’ variable and then a different data type value is assigned to ‘a’ again. Will it change the value? If Yes then Why?
+
+-a will have second data type value. This is because in the python, variables are not need to be declared with any particular type, and can change after they have been set. 
+  
+ 
